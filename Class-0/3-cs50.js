@@ -1,11 +1,11 @@
 /*
 Hoisting:
-  Definiation/Declaration is hoisted/placed at the top of the file regardless of 
-  wherever may it be assigned. 
+  Definiation/Declaration is hoisted/placed at the top of the file at the 
+  time of execution regardless of wherever may it be assigned. 
   * Empty var is hoisted to the top
   * Function is hoisted : function hoisting
 */
-// console.log(a)     // error : let is not func
+// console.log(a)     // error : let is not hoisted
 console.log(b)        // var is declared here even though assignment happen much later
 func()                // even though func() is not defined until much later but it is 
                       // hoisted to the top. so it works

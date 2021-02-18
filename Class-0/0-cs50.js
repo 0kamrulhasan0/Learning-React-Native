@@ -31,11 +31,11 @@ test_function()
 // array can hold multiple type of data including funtion and datatype
 // array have *array.length* property which tells the number of element 
 // in the array
-const arr = [ 'sg', "s", val, function() { console.log('hi') }]
+const arr = [ 'sg', "s", val, function() { console.log('hi') }, () => {console.log('new')}]
 for (let i=0; i<arr.length; i++) {
   console.log(arr[i] + ' ' + typeof arr[i]) }
 
 
 // Comparing
-console.log('43' == 43)   // Cocersion & Compare; different type same value True
-console.log('43' === 43)  // Compare; same type and same value True
+console.log('43' == 43)   // True: Cocersion & Compare; different type same value True
+console.log('43' === 43)  // False: Compare; same type and same value True
